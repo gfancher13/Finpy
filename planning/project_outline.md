@@ -17,7 +17,8 @@
         - forex
             - which forex?
     - how to store the lists of data that i want
-    - need to generalize certain functions, but for the intro of this project i need to have a specified list 
+    - need to generalize certain functions, but for the intro of this project i need to have a specified list
+    - it would nice to have etf holdings breakdown as well but i might add that later so i can get the ML stuff off the ground
 - ### Data/Store
     - right now im just gonna do a simple sqlite3 db locally
     - next steps
