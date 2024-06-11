@@ -7,5 +7,4 @@ for i in len(c):
 
 ```
 
-
-[a link] (test.txt)
+[a link](../README.md)
