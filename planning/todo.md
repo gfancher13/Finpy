@@ -3,28 +3,33 @@
 ### stock
 - DONE - his pricing
 - DONE - mkt cap
-- options contracts
-- options pricing
+- DONE - options contracts
+- DONE - options pricing
 - DONE - is
-- cf
-- bs
-- div
-- sector lists
-- sector find
-- industry list
-- industry find
+- DONE - cf
+- DONE - bs
+- DONE - div
+- later
+    - sector lists
+    - sector find
+    - industry list
+    - industry find
 
 ### econoimic indicators
 
 - DONE - which series
 - get series
-- specific functions for specified series?
+- later
+    - specific fuction for each?
 
 ### index
 - DONE - which indexes
-- get his pricing
+- DONE - get his pricing
+- later
+    - spec
 
 ### forex
 - DONE - which forex pairs
-- get his pricing
-- specific fuction for each?
+- DONE - get his pricing
+- later
+    - specific fuction for each?
