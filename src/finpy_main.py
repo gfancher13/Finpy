@@ -2,7 +2,7 @@
 import pandas as pd
 from polygon import RESTClient
 import sqlite3
-import fredapi as Fred
+from fredapi import Fred
 import requests
 
 
@@ -427,10 +427,13 @@ class FmpClient:
         df = pd.DataFrame()
         for i in dates:
             data = self.get_market_cap_range(ticker.upper(), i[0], i[1])
-            if isinstance(data, str) and data == "ERROR! dictionary empty; check request parameters":
+            if isinstance(data, str):# == "ERROR! dictionary empty; check request parameters":
                 continue
             else:
-                df = pd.concat([df, data], ignore_index=True)
+                if isinstance(df, str):
+                    print(df)
+                else:
+                    df = pd.concat([df, data], ignore_index=True)
         if df.empty:
             return "ERROR! DataFrame empty; check request parameters"
         df = df.sort_values(by='date').reset_index(drop=True)
@@ -546,6 +549,10 @@ class FmpClient:
             return "ERROR! dictionary empty; check initial request"
         else:
             df = self.utils.dividend_data_clean_(data)
-            return df
+            if isinstance(df, str):
+                return "no div"
+            else:
+                df['symbol'] = ticker
+                return df
         
     ##############################
